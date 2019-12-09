@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <title>Players</title>
+</head>
+
+
+
+<body>
+<!--{% extends 'index.html' %}-->
+<!--{%block content %}-->
+<!--{{ super() }}-->
+<a href=# class="btn btn-primary">Create new message</a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Recipient</th>
+        <th scope="col">Sender</th>
+        <th scope="col">Messenger</th>
+        <th scope="col">Content</th>
+    </tr>
+    </thead>
+    <tbody>
+<!--    {% for player in all_players %}-->
+    <tr>
+<!--        <td>{{player.player_id}}</td>-->
+<!--        <td>{{player.balance}}</td>-->
+<!--        <td>{{player.passwrd}}</td>-->
+        <td class="d-flex justify-content-end">
+            <a href=# class="btn btn-success">Edit</a>
+            <a href=# class="btn btn-danger">Delete</a>
+
+        </td>
+    </tr>
+<!--    {% endfor %}-->
+    </tbody>
+</table>
+
+
+<!--{%endblock%}-->
+
+
+</body>
+</html>
